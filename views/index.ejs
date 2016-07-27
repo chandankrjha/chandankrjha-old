@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="siteApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Chandan Kumar Jha - Web Developer</title>
+    <!-- <link rel="stylesheet/less" type="text/css" href="css/bootstrap.css" /> -->
+    <link href='css/fonts/latofont.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet/less" type="text/css" href="css/less/styles.less" />
+    <script src="js/vendor/less.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul>
+          <li ng-class="{selected:selectedTab === 'profile'}">
+          Profile
+          </li>
+          <li ng-class="{selected:selectedTab === 'projects'}">
+          Projects
+          </li>
+          <li ng-class="{selected:selectedTab === 'thoughts'}">
+          Thoughts
+          </li>
+          <li ng-class="{selected:selectedTab === 'blog'}">
+          Blog
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <div ui-view class="view-content"></div>
+    </article>
+    <script type="text/javascript" src="js/vendor/angular.min.js"></script>
+    <script type="text/javascript" src="js/vendor/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="js/vendor/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendor/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="js/code/app.js"></script>
+    <script type="text/javascript" src="js/code/components/profileCtrl.js"></script>
+  </body>
+</html>
