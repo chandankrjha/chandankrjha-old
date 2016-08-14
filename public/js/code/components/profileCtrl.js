@@ -3,7 +3,7 @@ angular.module('siteApp')
 		$stateProvider
 	    .state('profile', {
 	      url: '/profile',
-	      templateUrl:  'js/code/templates/profile.html',
+	      templateUrl:  'https://rawgit.com/chandankrjha/chandankrjha.github.io/master/js/code/templates/profile.html',
 	      controller: 'ProfileCtrl',
 	      reloadOnSearch: false
 	    });
